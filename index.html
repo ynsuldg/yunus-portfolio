@@ -40,7 +40,6 @@
             <div class="hero-buttons">
                 <a href="#projects" class="btn primary">Se projekt</a>
                 <a href="#contact" class="btn secondary">Kontakta mig</a>
-                <a href="#cv" class="btn secondary">Se CV</a>
             </div>
         </div>
 
@@ -83,7 +82,6 @@
                 <ul>
                     <li>Java-programmering</li>
                     <li>Utveckling mot databaser</li>
-                    <li>Utveckling av webbapplikationer</li>
                     <li>Javaverktyg och byggmiljöer</li>
                     <li>Komplex Javautveckling</li>
                     <li>Web services och integrationer</li>
@@ -165,6 +163,12 @@
             <div>
                 <h3>Webshop med mikrotjänster</h3>
 
+                <div class="project-meta">
+                    <span class="project-type project">Projekt</span>
+                    <span class="project-work group">Grupparbete</span>
+                    <span class="project-course">Kurs 5: Web services och integrationer, 30 yhp</span>
+                </div>
+
                 <p>
                     Backend till en webshop byggd med mikrotjänstarkitektur. Systemet
                     består av Auth-server, Product-service, Order-service och
@@ -188,6 +192,553 @@
                 <span>PostgreSQL</span>
                 <span>Docker</span>
                 <span>Render</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Google Gemini AI-integration</h3>
+
+                <div class="project-meta">
+                    <span class="project-type lab">Laboration</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 5: Web services och integrationer, 30 yhp</span>
+                </div>
+
+                <p>
+                    Webbapplikation utvecklad med Spring Boot och integrerad mot Google Gemini
+                    via ett REST API. Användaren kan ställa frågor genom ett webbgränssnitt
+                    och få AI-genererade svar i realtid.
+                </p>
+
+                <p>
+                    Lösningen använder Thymeleaf för frontend, PostgreSQL för datalagring
+                    och Spring Data JPA för databasåtkomst. Varje fråga och svar sparas i
+                    databasen och visas i en historikvy. Integrationen mot Gemini
+                    implementerades manuellt med HTTP-anrop och JSON-data för att ge en
+                    djupare förståelse för API-kommunikation och externa tjänster.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>REST API</span>
+                <span>JSON</span>
+                <span>Google Gemini</span>
+                <span>PostgreSQL</span>
+                <span>Spring Data JPA</span>
+                <span>Thymeleaf</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Tvåfaktorsautentisering med Authenticator-app</h3>
+
+                <div class="project-meta">
+                    <span class="project-type project">Projekt</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 4: Komplex Java-programmering, 40 yhp</span>
+                </div>
+
+                <p>
+                    Separat projekt där jag byggde ett säkert inloggningsflöde med
+                    Spring Boot och Spring Security. Användaren kan registrera sig,
+                    välja om tvåfaktorsautentisering ska aktiveras och därefter logga
+                    in med lösenord samt en tidsbaserad kod från Microsoft Authenticator
+                    eller Google Authenticator.
+                </p>
+
+                <p>
+                    Projektet genererar en hemlig nyckel som sparas i PostgreSQL och
+                    bäddas in i en QR-kod som kan scannas av en authenticator-app.
+                    Skyddade sidor kräver både lyckad inloggning och verifierad MFA-kod.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>PostgreSQL</span>
+                <span>2FA</span>
+                <span>MFA</span>
+                <span>TOTP</span>
+                <span>QR Code</span>
+                <span>Thymeleaf</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Säker webshop</h3>
+
+                <div class="project-meta">
+                    <span class="project-type project">Projekt</span>
+                    <span class="project-work group">Grupparbete</span>
+                    <span class="project-course">Kurs 4: Komplex Java-programmering, 40 yhp</span>
+                </div>
+
+                <p>
+                    Säker webshop med Spring Boot.
+                    Systemet innehåller registrering, inloggning, produktkatalog,
+                    kundvagn, orderhantering, profilsida, GDPR-anpassad cookiehantering
+                    och administratörsfunktioner. Orderbekräftelser skickas via en separat
+                    Message Service som ansvarar för e-postutskick.
+                </p>
+
+                <p>
+                    Mitt huvudansvar var produktdelen där jag arbetade med Product-entity,
+                    ProductRepository, ProductService, produktsidan, adminfunktion för att
+                    skapa produkter samt tester mot både H2-databas och mockat repository.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>PostgreSQL</span>
+                <span>Thymeleaf</span>
+                <span>Docker</span>
+                <span>Render</span>
+                <span>Message Service</span>
+                <span>GDPR</span>
+                <span>Testing</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Realtidschatt med Jakarta EE och WebSocket</h3>
+
+                <div class="project-meta">
+                    <span class="project-type lab">Laboration</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 4: Komplex Java-programmering, 40 yhp</span>
+                </div>
+
+                <p>
+                    Utvecklade en webbapplikation med Jakarta EE där användare kan
+                    registrera konton, logga in och kommunicera i realtid.
+                    Applikationen använder JSF som presentationslager, CDI för
+                    dependency injection, JPA för databashantering och PostgreSQL för
+                    lagring av användaruppgifter.
+                </p>
+
+                <p>
+                    Implementerade användarregistrering, autentisering och
+                    sessionshantering samt utvecklade en separat WebSocket-server som
+                    möjliggör realtidskommunikation genom att skicka meddelanden mellan
+                    anslutna klienter i realtid.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Jakarta EE</span>
+                <span>JSF</span>
+                <span>CDI</span>
+                <span>JPA</span>
+                <span>WebSocket</span>
+                <span>PostgreSQL</span>
+                <span>Maven</span>
+                <span>MVC</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>JavaTools – CRUD-system med Spring Boot</h3>
+
+                <div class="project-meta">
+                    <span class="project-type project">Projekt</span>
+                    <span class="project-work group">Grupparbete + individuellt vidarearbete</span>
+                    <span class="project-course">Kurs 3: Javaverktyg och byggmiljöer, 30 yhp</span>
+                </div>
+
+                <p>
+                    Grupputvecklad webbapplikation byggd med Spring Boot för hantering av
+                    resurserna Drink, Food, Pizza och Spirit. Applikationen följer
+                    MVC-arkitektur och erbjuder full CRUD-funktionalitet med Thymeleaf
+                    som presentationslager och PostgreSQL (Neon) som databas. Jag
+                    Dockeriserade applikationen och ansvarade för driftsättning på
+                    Render.
+                </p>
+
+                <p>
+                    Mitt huvudansvar var utvecklingen av Drink-modulen där jag
+                    implementerade controller, service-, repository- och
+                    valideringslogik samt egna exceptions. Som individuellt vidarearbete
+                    implementerade jag en Jenkins-baserad byggprocess med Maven Wrapper,
+                    Logback-baserad loggning samt integrationstester med Spring Boot,
+                    MockMvc och H2 för att automatisera bygg-, test- och
+                    kvalitetssäkringsprocessen.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring MVC</span>
+                <span>Spring Data JPA</span>
+                <span>Hibernate</span>
+                <span>Thymeleaf</span>
+                <span>PostgreSQL</span>
+                <span>Neon</span>
+                <span>Docker</span>
+                <span>Render</span>
+                <span>Jenkins</span>
+                <span>CI/CD</span>
+                <span>MockMvc</span>
+                <span>JUnit 5</span>
+                <span>H2</span>
+                <span>Logback</span>
+                <span>Maven</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>ATM System – Spring Boot-applikation med Unit Testing och End-to-End-testning</h3>
+
+                <div class="project-meta">
+                    <span class="project-type lab">Laboration</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 3: Javaverktyg och byggmiljöer, 30 yhp</span>
+                </div>
+
+                <p>
+                    Individuellt projekt utvecklat med Spring Boot enligt lagerbaserad arkitektur
+                    (Controller, Service och Component) för simulering av grundläggande
+                    bankomatsfunktioner såsom insättning, uttag och saldohantering.
+                    Applikationen använder Thymeleaf för presentation och implementerar
+                    anpassad felhantering genom egna exceptions för olika affärsregler.
+                </p>
+
+                <p>
+                    Jag implementerade affärslogik för validering av transaktioner,
+                    saldohantering och begränsningar för uttag. Projektet kompletterades
+                    med omfattande testning där JUnit 5 användes för enhetstester,
+                    Mockito för isolerad testning av service-lagret samt Playwright
+                    för end-to-end-testning av webbgränssnittet. Tester verifierar både
+                    normala användarflöden och felhantering för att säkerställa att
+                    applikationen fungerar korrekt genom hela stacken.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring MVC</span>
+                <span>Thymeleaf</span>
+                <span>JUnit 5</span>
+                <span>Mockito</span>
+                <span>Playwright</span>
+                <span>H2 Database</span>
+                <span>Maven</span>
+                <span>Dependency Injection</span>
+                <span>Exception Handling</span>
+                <span>Unit Testing</span>
+                <span>End-to-End Testing</span>
+                <span>MVC</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Gruppprojekt – Spring Boot MVC-applikation med Thymeleaf</h3>
+
+                <div class="project-meta">
+                    <span class="project-type lab">Laboration</span>
+                    <span class="project-work group">Grupparbete</span>
+                    <span class="project-course">Kurs 3: Javaverktyg och byggmiljöer, 30 yhp</span>
+                </div>
+
+                <p>
+                    Grupputvecklat webbprojekt byggt med Spring Boot och Thymeleaf enligt
+                    MVC-arkitekturen (Model–View–Controller). Applikationen består av flera
+                    funktionella moduler för hantering och presentation av användare,
+                    personer, bokningar, betyg, taggar, kommentarer, uppgifter och köhantering
+                    genom separata controllers, modeller och vyer.
+                </p>
+
+                <p>
+                    Jag deltog i utvecklingen av backend-logik och webbgränssnitt genom att
+                    implementera Spring MVC-controllers, skapa domänmodeller samt bygga
+                    dynamiska Thymeleaf-vyer. Projektet gav praktisk erfarenhet av routing,
+                    dataöverföring mellan controller och vy, användning av modellobjekt samt
+                    strukturering av en Java-baserad webbapplikation enligt etablerade
+                    designprinciper.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring MVC</span>
+                <span>Thymeleaf</span>
+                <span>MVC</span>
+                <span>HTML</span>
+                <span>Model-View-Controller</span>
+                <span>Routing</span>
+                <span>Dependency Injection</span>
+                <span>Maven</span>
+                <span>Git</span>
+                <span>Teamarbete</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Chattapplikation med Java och Spring Boot</h3>
+
+                <div class="project-meta">
+                    <span class="project-type project">Projekt</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 2: Utveckling mot databaser, 35 yhp</span>
+                </div>
+
+                <p>
+                    Utvecklade en klient-serverbaserad chattapplikation där flera
+                    användare kan ansluta samtidigt, registrera konton, logga in och
+                    skicka meddelanden i realtid. Kommunikation mellan klient och
+                    server sker via Java Sockets och servern hanterar flera klienter
+                    parallellt med hjälp av multitrådning.
+                </p>
+
+                <p>
+                    Implementerade lagring av användare och meddelandehistorik med
+                    Spring Boot, Spring Data JPA och MySQL. Projektet följer en
+                    lagerarkitektur med separata service-, repository- och
+                    domänlager samt innehåller enhetstester skrivna med JUnit och
+                    Mockito.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring Data JPA</span>
+                <span>Hibernate</span>
+                <span>MySQL</span>
+                <span>Java Sockets</span>
+                <span>JUnit 5</span>
+                <span>Mockito</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Databasåtkomst med JDBC</h3>
+
+                <div class="project-meta">
+                    <span class="project-type lab">Laboration</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 2: Utveckling mot databaser, 35 yhp</span>
+                </div>
+
+                <p>
+                    Laborationsprojekt med fokus på Java Database Connectivity (JDBC)
+                    och relationsdatabaser. Implementerade databasanslutning mot MySQL
+                    samt funktionalitet för att lagra och hämta data från databasen med
+                    hjälp av SQL-frågor.
+                </p>
+
+                <p>
+                    Projektet använder DAO-mönstret för att separera databaslogik från
+                    applikationslogik och inkluderar hantering av databasanslutningar,
+                    PreparedStatements och mappning mellan databastabeller och Java-
+                    objekt.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>JDBC</span>
+                <span>MySQL</span>
+                <span>SQL</span>
+                <span>DAO Pattern</span>
+                <span>PreparedStatement</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Databasmodellering och SQL</h3>
+
+                <div class="project-meta">
+                    <span class="project-type lab">Laboration</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 2: Utveckling mot databaser, 35 yhp</span>
+                </div>
+
+                <p>
+                    Laborationsprojekt med fokus på relationsdatabaser och SQL. Arbetade
+                    med att skapa databaser och tabeller, definiera primär- och
+                    främmande nycklar samt utföra CRUD-operationer för hantering av data.
+                </p>
+
+                <p>
+                    Projektet omfattade även databasnormalisering enligt första
+                    normalformen (1NF), modellering av relationer mellan tabeller samt
+                    användning av JOIN-frågor för att hämta relaterad information från
+                    flera tabeller.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>Database Design</span>
+                <span>Normalization</span>
+                <span>CRUD</span>
+                <span>Joins</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>MongoDB och NoSQL-databaser</h3>
+
+                <div class="project-meta">
+                    <span class="project-type lab">Laboration</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 2: Utveckling mot databaser, 35 yhp</span>
+                </div>
+
+                <p>
+                    Laborationsprojekt med fokus på dokumentbaserade databaser och
+                    MongoDB. Implementerade ett DAO-lager i Java för att hantera
+                    lagring och hämtning av data från en MongoDB-databas i molnet
+                    (MongoDB Atlas).
+                </p>
+
+                <p>
+                    Projektet omfattade CRUD-operationer, filtrering, uppdatering och
+                    borttagning av dokument samt användning av MongoDB Java Driver för
+                    kommunikation mellan applikation och databas.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>MongoDB</span>
+                <span>NoSQL</span>
+                <span>MongoDB Atlas</span>
+                <span>CRUD</span>
+                <span>DAO Pattern</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Textbaserat Äventyrsspel</h3>
+
+                <div class="project-meta">
+                    <span class="project-type project">Projekt</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 1: Java-programmering, 60 yhp</span>
+                </div>
+
+                <p>
+                    Individuell vidareutveckling av ett textbaserat äventyrsspel i Java
+                    utifrån ett tillhandahållet grundprojekt. Spelet bygger på
+                    objektorienterade principer där spelaren utforskar olika miljöer,
+                    bekämpar fiender, samlar föremål och utvecklar sin karaktär.
+                </p>
+
+                <p>
+                    Implementerade nya spelområden, fiender och spelmekaniker samt
+                    filbaserad lagring av statistik med DAO-mönstret, topplista,
+                    Builder Pattern för skapande av spelare och Singleton Pattern för
+                    applikationskonfiguration.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>OOP</span>
+                <span>Design Patterns</span>
+                <span>Builder Pattern</span>
+                <span>Singleton Pattern</span>
+                <span>DAO Pattern</span>
+                <span>File Persistence</span>
+                <span>Console Application</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Konsolbaserad Webshop</h3>
+
+                <div class="project-meta">
+                    <span class="project-type project">Projekt</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 1: Java-programmering, 60 yhp</span>
+                </div>
+
+                <p>
+                    Utvecklade en konsolbaserad webshop i Java där användaren kan skapa,
+                    söka och visa produkter. Applikationen använder objektorienterad
+                    design med arv, abstrakta klasser och polymorfism för att hantera
+                    olika produkttyper.
+                </p>
+
+                <p>
+                    Implementerade filbaserad lagring genom serialisering för att spara
+                    och läsa in produkter mellan körningar samt stöd för både
+                    konsolbaserat och dialogbaserat användargränssnitt via ett gemensamt
+                    interface.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>OOP</span>
+                <span>Inheritance</span>
+                <span>Polymorphism</span>
+                <span>Interfaces</span>
+                <span>Serialization</span>
+                <span>File I/O</span>
+                <span>Console Application</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div>
+                <h3>Grundläggande Java – Metoder och Arrayer</h3>
+
+                <div class="project-meta">
+                    <span class="project-type lab">Laboration</span>
+                    <span class="project-work individual">Individuellt</span>
+                    <span class="project-course">Kurs 1: Java-programmering, 60 yhp</span>
+                </div>
+
+                <p>
+                    En av de första laborationerna under utbildningen med fokus på
+                    grundläggande Java-programmering. Uppgiften omfattade arbete med
+                    metoder, arrayer, loopar, parametrar och returvärden för att bygga
+                    upp förståelse för språkets grundläggande konstruktioner.
+                </p>
+
+                <p>
+                    Implementerade funktioner för utskrift av arrayer, sökning efter
+                    största värde samt metoder med parametrar och returvärden. Projektet
+                    lade grunden för senare arbete med objektorienterad programmering.
+                </p>
+            </div>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>Methods</span>
+                <span>Arrays</span>
+                <span>Loops</span>
+                <span>Parameters</span>
+                <span>Return Values</span>
             </div>
         </article>
     </section>
@@ -269,7 +820,7 @@
             <p>Hej,</p>
 
             <p>
-                Jag heter Yunus Uludag, är 33 år och studerar till Javautvecklare.
+                Jag heter Yunus Uludag och studerar till Javautvecklare.
                 Jag söker nu en LIA-plats under perioden V46 2026 till V22 2027 där
                 jag får möjlighet att utvecklas praktiskt, lära mig av erfarna
                 utvecklare och få en bättre förståelse för hur arbetet fungerar i
@@ -304,26 +855,6 @@
                 Med vänliga hälsningar,<br/>
                 Yunus Uludag
             </p>
-        </div>
-    </section>
-
-    <section id="cv" class="section">
-        <p class="section-label">CV</p>
-        <h2>Mitt CV</h2>
-
-        <p class="cv-intro">
-            Här finns mitt ursprungliga CV som bildfiler. Sidan är byggd utifrån
-            samma information men anpassad för webben.
-        </p>
-
-        <div class="cv-images">
-            <a href="assets/cv-page-1.jpg" target="_blank">
-                <img src="assets/cv-page-1.jpg" alt="CV sida 1"/>
-            </a>
-
-            <a href="assets/cv-page-2.jpg" target="_blank">
-                <img src="assets/cv-page-2.jpg" alt="CV sida 2"/>
-            </a>
         </div>
     </section>
 
